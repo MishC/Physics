@@ -1,0 +1,1 @@
+gfortran  -fpic -ffree-form -Wall -Wtabs -Wextra -Wconversion -ffree-line-length-none -fimplicit-none -fbackslash -fbounds-check -fbacktrace -O3  -g3 -llapack Hmatrix_Bsplines.f eigreal.f sorting_module.f  -o div 
