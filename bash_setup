@@ -1,0 +1,30 @@
+dircolors --print-database
+For bash, you'd put this in /etc/profile:
+
+# `dircolors` prints out `LS_COLORS='...'; export LS_COLORS`, so eval'ing
+# $(dircolors) effectively sets the LS_COLORS environment variable.
+
+eval "$(dircolors /etc/DIR_COLORS)"
+
+In order to change the settings for everybody, you could create a /etc/dircolors file and add the following to /etc/bashrc:
+
+d=/etc/dircolors
+test -r $d && eval "$(dircolors $d)"
+
+# these are from .bashrc script below
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
