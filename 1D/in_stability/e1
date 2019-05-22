@@ -1,0 +1,8 @@
+9 127.75 12 ! powerof2, rmax, ninit / next line is inputfile for psi and x;
+in_stability/wfft4.dat                
+63.875                 ! p
+206700.0  10 -124020.0 0.1          ! propagation time, numberoftimesteps, start time, dt 
+0.7e-05                              ! e0  - max laser intensity
+2.5330e-05                           ! wL  - laser frequency              
+out_stability/e1  
+

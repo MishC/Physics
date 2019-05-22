@@ -1,0 +1,8 @@
+20 256000 12 ! powerof2, rmax, ninit / next line is inputfile for psi and x;
+in_stability/wfnew.dat                
+128000                 ! p
+206.7  20 -124.02  0.05          ! propagation time, numberoftimesteps, start time, dt 
+0.5                            ! e0  - max laser intensity
+2.5330e-02                           ! wL  - laser frequency              
+out01/skFULL_E1  
+
