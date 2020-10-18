@@ -1,8 +1,0 @@
-20 256.00e+03 9 ! powerof2, rmax, ninit / next line is inputfile for psi and x;
-inF915/wfnew.dat                    
-128.00e+03                        ! b, p
-206700.0  40 -124020.0 0.05          ! propagation time, numberoftimesteps, start time, dt 
-1.27e-05                           !   e0  - max laser intensity
-2.5330e-05                          !  wL  - laser frequency              
-outF915/e9_mid  
-
